@@ -84,13 +84,19 @@ thead {
         margin: 0 auto; /* Centraliza a tabela horizontalmente */
         width: auto; /* Ajusta a largura da tabela para se ajustar ao conteúdo */
     }
-
+    
     .table-container {
         margin: 0 auto; /* Centraliza a div da tabela horizontalmente */
     }
 
-    label, input, button, .result, .error-message {
+    label, button, .result, .error-message {
         display: block;
         margin: 10px auto; /* Centraliza elementos blocos horizontalmente com margem automática */
+    }
+    input {
+        margin-right:  auto; /* Centraliza a tabela horizontalmente */
+        margin-left: auto; /* Centraliza a tabela horizontalmente */
+        width: 100%; /* Ajusta a largura da tabela para se ajustar ao conteúdo */
+        
     }
 }
