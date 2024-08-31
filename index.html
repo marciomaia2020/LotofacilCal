@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Jogos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Calculadora de Jogos - LOTOFÁCIL</h1>
+    <label for="valorAposta">Valor da Aposta Simples:</label>
+    <input type="number" id="valorAposta" min="0.01" step="0.01" value="3.00">
+    <div id="error-valorAposta" class="error-message"></div>
+
+    <label for="dezenas" class="formated-textqnj"><b>Quantidade de Nº. Jogados</b></label>
+    <input type="number" id="dezenas" min="15" max="20" step="1" value="15">
+    <div id="error-dezenas" class="error-message"></div>
+
+    <label for="quantidadeJogos" class="formated-textqj"><b>Quantidade de Jogos</b>:</label>
+    <input type="number" id="quantidadeJogos" min="1" value="1">
+    <div id="error-quantidadeJogos" class="error-message"></div>
+
+    <label for="cotas">Número de Cotas/Pessoas:</label>
+    <input type="number" id="cotas" min="1" value="1">
+    <div id="error-cotas" class="error-message"></div>
+
+    <button onclick="calcularCusto()">Calcular Custo</button>    <hr />
+
+    <div class="result" id="resultado"></div>
+
+
+<div class="table-container">  
+    <table border="1">
+        <thead>
+            <tr>
+                <th class="formated-textqnj">Quantidade de Nº. Jogados</th>
+                <th class="formated-textqj">Quantidade de Jogos</th>
+                <th>1ª Faixa</th>
+                <th>2ª Faixa</th>
+                <th>3ª Faixa</th>
+                <th>4ª Faixa</th>
+                <th>5ª Faixa</th>
+                <th>2ª Faixa</th>
+                <th>3ª Faixa</th>
+                <th>4ª Faixa</th>
+                <th>5ª Faixa</th>
+                <th>3ª Faixa</th>
+                <th>4ª Faixa</th>
+                <th>5ª Faixa</th>
+                <th>4ª Faixa</th>
+                <th>5ª Faixa</th>
+                <th>5ª Faixa</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>15</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>16</td>
+                <td>1</td>
+                <td>15</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>2</td>
+                <td>14</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>13</td>
+                <td>0</td>
+                <td>4</td>
+                <td>12</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>136</td>
+                <td>1</td>
+                <td>30</td>
+                <td>105</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>42</td>
+                <td>91</td>
+                <td>0</td>
+                <td>6</td>
+                <td>52</td>
+                <td>78</td>
+                <td>10</td>
+                <td>60</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>816</td>
+                <td>1</td>
+                <td>45</td>
+                <td>315</td>
+                <td>455</td>
+                <td>0</td>
+                <td>4</td>
+                <td>84</td>
+                <td>364</td>
+                <td>364</td>
+                <td>10</td>
+                <td>130</td>
+                <td>390</td>
+                <td>20</td>
+                <td>180</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>3.876</td>
+                <td>1</td>
+                <td>60</td>
+                <td>630</td>
+                <td>1820</td>
+                <td>1365</td>
+                <td>5</td>
+                <td>140</td>
+                <td>910</td>
+                <td>1820</td>
+                <td>15</td>
+                <td>260</td>
+                <td>1170</td>
+                <td>35</td>
+                <td>420</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>15.504</td>
+                <td>1</td>
+                <td>75</td>
+                <td>1050</td>
+                <td>4550</td>
+                <td>6825</td>
+                <td>6</td>
+                <td>210</td>
+                <td>1820</td>
+                <td>5460</td>
+                <td>21</td>
+                <td>455</td>
+                <td>2730</td>
+                <td>56</td>
+                <td>840</td>
+                <td>126</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+    
+    <h2>Informações sobre Bolão</h2>
+   
+<div class="table-container">  
+    <table border="1">
+        <thead>
+            <tr>
+                <th class="formated-textqnj">Quantidade de Números</th>
+                <th class="formated-textqj">Quantidade de Apostas</th>
+                <th>Quantidade Mínima de Cotas para Bolão</th>
+                <th>Quantidade Máxima de Cotas para Bolão</th>
+                <th>Valor Mínimo da Cota</th>
+                <th>Valor Mínimo do Bolão</th>
+                <th>Valor Máximo do Bolão</th>
+                <th>Quantidade Máxima de Jogos no Recibo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>15</td>
+                <td>1</td>
+                <td>2</td>
+                <td>7</td>
+                <td>R$4,00</td>
+                <td>R$12,00</td>
+                <td>R$30,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>16</td>
+                <td>2</td>
+                <td>25</td>
+                <td>R$4,00</td>
+                <td>R$48,00</td>
+                <td>R$480,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>136</td>
+                <td>2</td>
+                <td>30</td>
+                <td>R$13,60</td>
+                <td>R$408,00</td>
+                <td>R$4.080,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>816</td>
+                <td>2</td>
+                <td>35</td>
+                <td>R$69,94</td>
+                <td>R$2.448,00</td>
+                <td>R$24.480,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>3.876</td>
+                <td>2</td>
+                <td>70</td>
+                <td>R$166,11</td>
+                <td>R$11.628,00</td>
+                <td>R$116.280,00</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>15.504</td>
+                <td>2</td>
+                <td>100</td>
+                <td>R$465,12</td>
+                <td>R$46.512,00</td>
+                <td>R$186.048,00</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

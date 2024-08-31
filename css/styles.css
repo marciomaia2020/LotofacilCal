@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    color: #A55592;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    color: #A55592;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Adiciona uma barra de rolagem horizontal às tabelas se necessário */
+.table-container {
+    overflow-x: auto; /* Adiciona a rolagem horizontal */
+    -webkit-overflow-scrolling: touch; /* Permite rolagem suave em dispositivos móveis */
+}
+
+/* Estiliza as tabelas */
+table {
+    border-collapse: collapse; /* Remove espaçamento entre as bordas das células */
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+}
+table th.formated-textqnj{
+    color: rgb(0, 0, 0); /* Quantidade de Dezenas: (Quantidade de Nº. Jogados  */
+
+}
+table th.formated-textqj{
+    color: rgb(38, 0, 254); /* Quantidade de Jogos: */
+
+}
+label.formated-textqnj {
+    color: rgb(0, 0, 0) /* Quantidade de Dezenas: (Quantidade de Nº. Jogados  */
+}
+label.formated-textqj {
+    color: rgb(38, 0, 245) /* Quantidade de Jogos: */
+}
+
+
+th, td {
+    border: 1px solid #ddd; /* Define a borda das células */
+    padding: 8px; /* Adiciona preenchimento às células */
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+thead {
+    background-color: #f4f4f4; /* Define uma cor de fundo para o cabeçalho */
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) { /* Ajuste o valor conforme necessário */
+    body {
+        text-align: center; /* Centraliza o texto em todo o corpo do site */
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box; /* Inclui o padding na largura total */
+    }
+
+    table {
+        margin: 0 auto; /* Centraliza a tabela horizontalmente */
+        width: auto; /* Ajusta a largura da tabela para se ajustar ao conteúdo */
+    }
+
+    .table-container {
+        margin: 0 auto; /* Centraliza a div da tabela horizontalmente */
+    }
+
+    label, input, button, .result, .error-message {
+        display: block;
+        margin: 10px auto; /* Centraliza elementos blocos horizontalmente com margem automática */
+    }
+}
