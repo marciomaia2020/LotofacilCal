@@ -89,7 +89,7 @@ thead {
         margin: 0 auto; /* Centraliza a div da tabela horizontalmente */
     }
 
-    label, button, .result, .error-message {
+    label, input, button, .result, .error-message {
         display: block;
         margin: 10px auto; /* Centraliza elementos blocos horizontalmente com margem automática */
     }
