@@ -94,9 +94,12 @@ thead {
         margin: 10px auto; /* Centraliza elementos blocos horizontalmente com margem automática */
     }
     input {
-        margin-right:  auto; /* Centraliza a tabela horizontalmente */
-        margin-left: auto; /* Centraliza a tabela horizontalmente */
-        width: 100%; /* Ajusta a largura da tabela para se ajustar ao conteúdo */
-        
+        padding: 8px;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 300px; /* Define uma largura máxima para o input */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
