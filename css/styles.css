@@ -1,24 +1,37 @@
-body {
+Body {
     font-family: Arial, sans-serif;
     margin: 20px;
     color: #A55592;
 }
 
+/* Estilo dos rótulos e campos de entrada */
 label {
     display: block;
-    margin: 10px 0 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    line-height: 30px;
 }
 
-input {
-    padding: 8px;
-    margin-bottom: 20px;
+input[type="number"] {
     width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
+/* Estilo do botão */
 button {
     padding: 10px;
     font-size: 16px;
     color: #A55592;
+}
+
+/* Estilo da linha horizontal */
+hr {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .result {
@@ -26,10 +39,55 @@ button {
     font-size: 18px;
 }
 
+/* Estilo para a mensagem de erro */
 .error-message {
     color: red;
     font-size: 14px;
 }
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th.formated-textqnj{
+    color: rgb(0, 0, 0); /* Quantidade de Dezenas: (Quantidade de Nº. Jogados  */
+
+}
+table th.formated-textqj{
+    color: rgb(38, 0, 254); /* Quantidade de Jogos: */
+
+}
+label.formated-textqnj {
+    color: rgb(0, 0, 0) /* Quantidade de Dezenas: (Quantidade de Nº. Jogados  */
+}
+label.formated-textqj {
+    color: rgb(38, 0, 245) /* Quantidade de Jogos: */
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+   color: #A9CF46;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
 
 /* Adiciona uma barra de rolagem horizontal às tabelas se necessário */
 .table-container {
@@ -57,7 +115,6 @@ label.formated-textqj {
     color: rgb(38, 0, 245) /* Quantidade de Jogos: */
 }
 
-
 th, td {
     border: 1px solid #ddd; /* Define a borda das células */
     padding: 8px; /* Adiciona preenchimento às células */
@@ -67,6 +124,16 @@ th, td {
 thead {
     background-color: #f4f4f4; /* Define uma cor de fundo para o cabeçalho */
 }
+
+/* Adiciona uma barra de rolagem horizontal às tabelas se necessário */
+.table-container {
+    overflow-x: auto; /* Adiciona a rolagem horizontal */
+    -webkit-overflow-scrolling: touch; /* Permite rolagem suave em dispositivos móveis */
+}
+thead {
+    background-color: #f4f4f4; /* Define uma cor de fundo para o cabeçalho */
+}
+
 
 /* Estilos para dispositivos móveis */
 @media (max-width: 768px) { /* Ajuste o valor conforme necessário */

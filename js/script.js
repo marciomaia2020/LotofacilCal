@@ -88,7 +88,8 @@ function calcularCusto() {
                 color: #555; /* Cor do texto em cinza médio */
                 line-height: 1.5; /* Espaçamento entre linhas */
                 margin-bottom: 10px; /* Espaçamento inferior */
-                background-color: #eeddea;
+                background-color: #eeddea; /* Cor de fundo */
+                border-radius: 8px /* Arredondamento da borda */
             ">
                <span style="color: rgb(38, 0, 254);">Quantidade de Jogos:</span> <strong>${quantidadeJogos}</strong><br>
                 Custo Total: <strong>R$${custoTotal.toFixed(2)}</strong><br>
