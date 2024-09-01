@@ -24,14 +24,40 @@
     <input type="number" id="cotas" min="1" value="1">
     <div id="error-cotas" class="error-message"></div><br />
 
-    <button onclick="calcularCusto()">Calcular Custo</button>    
-    
+    <label for="concursosConsecutivos">Concursos Consecutivos: TEIMOSINHA <small>(Escolha quantas vezes quer que a aposta se repita!)</small></label>
+        <select id="concursosConsecutivos">
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+        <option value="18">18</option>
+        <option value="24">24</option>
+    </select><br /><br />
+    <div id="error-concursosConsecutivos" class="error-message"></div>
+
+    <button onclick="calcularCusto()">Calcular Custo</button>
+    <button onclick="calcularTeimosinha()">Calcular Teimosinha</button>
+
     <hr />
 
-
-    
-
     <div class="result" id="resultado"></div>
+
+
+<div class="info">
+    <p>
+        <b>Bolão:</b> 
+        O Bolão das Loterias CAIXA é a forma que o apostador tem de realizar apostas em grupo.</p> 
+        <p>Basta preencher o campo próprio no volante ou solicitar ao atendente da lotérica.</p>
+        <p>Na Lotofácil, os bolões têm preço mínimo de R$ 12,00, cada cota não pode ser inferior a R$ 4,00, sendo possível realizar um bolão com no mínimo 2 e no máximo 7 cotas (para apostas compostas por 15 números) ou mínimo de 2 e máximo de 25 (para apostas compostas por 16 números) ou mínimo de 2 e máximo de 30 (para apostas compostas por 17 números) ou mínimo de 2 e máximo de 35 (para apostas compostas por 18 números) ou mínimo de 2 e máximo de 70 (para apostas compostas por 19 números) ou mínimo de 2 e máximo de 100 (para apostas compostas por 20 números).</p>
+        <p>É permitida a realização de no máximo 10 jogos no recibo, em caso de bolões com 15, 16, 17, 18 ou 19 e no máximo 4 apostas por Bolão para bolões com 20 números.</p> 
+        <p>Em caso de Bolão com mais de uma aposta, todas elas deverão conter a mesma quantidade de números de prognósticos.</p>
+        <p>Outra forma de participar do Bolão da Lotofácil é comprando cotas de bolões organizados pelas lotéricas. Neste caso, poderá ser cobrada uma Tarifa de Serviço adicional de até 35% do valor da cota.</p>
+        <p>As cotas também podem ser compradas no Portal www.loteriasonline.caixa.gov.br com tarifa de serviço adicional de 35% do valor da cota.</p>
+        <p>O horário de venda dos bolões digitais encerra às 19h30 para os jogos com sorteios realizados no mesmo dia.</p> 
+        <p>O valor mínimo de compra de cota é de R$ 20,00.</p>
+    </p>
+</div>
+
+
 
 
 <div class="table-container">  
