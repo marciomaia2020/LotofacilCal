@@ -12,7 +12,7 @@ label {
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
-    line-height: 30px;
+    line-height: 1px;
 }
 
 input[type="number"] {
