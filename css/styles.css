@@ -1,7 +1,9 @@
-Body {
+body {
     font-family: Arial, sans-serif;
     margin: 20px;
     color: #A55592;
+    line-height: 1.6;
+
 }
 #teimosinhaBtn {
     display: none; /* Ocultar o botão por padrão */
@@ -12,7 +14,6 @@ label {
     display: block;
     margin-top: 15px;
     margin-bottom: 5px;
-    line-height: 1px;
 }
 
 input[type="number"] {
@@ -87,7 +88,6 @@ tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
 .info{
-    line-height: 1.3;
     text-align: justify;
 }
 
